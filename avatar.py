@@ -31,3 +31,17 @@ throw = [pg.image.load('images/Throw__000.png'),pg.image.load('images/Throw__001
 
 # or dagger
 blade = pg.image.load('images/Kunai.png')
+
+
+# The class Player of the avatar
+
+class Player(object):
+    def __init__(self, x,y, width, height):
+
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.vel = 5
+        
+        # Initialise the booleans next
