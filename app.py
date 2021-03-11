@@ -2,9 +2,19 @@
 
 import pygame as pg
 
+
+# All the Game constants
 HEIGHT = 720
 WIDTH = 540
 NAME = "My awesome Game 2.0"
+x = 0
+y = 0
+
+# avatar images for activity
+walking_right = []
+walking_left = []
+jumping = []
+dead = []
 
 
 def main():
