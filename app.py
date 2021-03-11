@@ -15,6 +15,12 @@ def main():
     # The set up of the window
     pg.display.set_caption(NAME)
 
+    # load in the logo
+    logo = pg.image.load('mylogo.png')
+
+    # Display the logo as the game's Icon
+    pg.display.set_icon(logo)
+
     # create a surface on screen
     screen = pg.display.set_mode((HEIGHT, WIDTH))
 
@@ -29,8 +35,7 @@ def main():
                 # exit the while loop if quit is the event
                 running = False
 
-
-
+    pg.quit()
 
 # run the main function only if this module is executed as the main script
 # (if you import this as a module then nothing is executed)
