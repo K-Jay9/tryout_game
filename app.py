@@ -15,6 +15,21 @@ def main():
     # The set up of the window
     pg.display.set_caption(NAME)
 
+    # create a surface on screen
+    screen = pg.display.set_mode((HEIGHT, WIDTH))
+
+    # loop control variable
+    running = True
+
+    while running:
+        # gets all the events from the eevnt queue
+        for event in pg.event.get():
+
+            if event.type == pg.QUIT:
+                # exit the while loop if quit is the event
+                running = False
+
+
 
 
 # run the main function only if this module is executed as the main script
