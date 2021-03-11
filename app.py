@@ -33,7 +33,7 @@ def main():
     screen = pg.display.set_mode((HEIGHT, WIDTH))
 
     # loop control variable
-    running = True
+    running = True 
 
     while running:
         # gets all the events from the eevnt queue

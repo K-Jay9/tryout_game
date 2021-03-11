@@ -28,4 +28,6 @@ slide = [pg.image.load('images/Slide__000.png'),pg.image.load('images/Slide__001
 
 throw = [pg.image.load('images/Throw__000.png'),pg.image.load('images/Throw__001.png'),pg.image.load('images/Throw__002.png'),pg.image.load('images/Throw__003.png'),pg.image.load('images/Throw__004.png'),pg.image.load('images/Throw__005.png'),pg.image.load('images/Throw__006.png'),pg.image.load('images/Throw__007.png'),pg.image.load('images/Throw__008.png'),pg.image.load('images/Throw__009.png')]
 
+
+# or dagger
 blade = pg.image.load('images/Kunai.png')
