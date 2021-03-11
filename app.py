@@ -2,6 +2,9 @@
 
 import pygame as pg
 
+# import avatar movements
+from avatar import slide, throw, blade, run, jump, jump_attack, jump_throw, glide, idle, dead, climb, attack
+
 
 # All the Game constants
 HEIGHT = 720
@@ -10,11 +13,6 @@ NAME = "My awesome Game 2.0"
 x = 0
 y = 0
 
-# avatar images for activity
-walking_right = []
-walking_left = []
-jumping = []
-dead = []
 
 
 def main():
