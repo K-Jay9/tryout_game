@@ -16,6 +16,25 @@ y = 0
 
 # initialing avatar statistics
 
+'''
+
+We create a Projectile or blade class here
+
+'''
+
+class Projectile(object):
+
+    def __init__(self, x,y, facing):
+        self.x = x
+        self.y = y
+        self.facing = facing
+        self.velo = 5 
+
+    # Draw the projectile to the screen
+
+    def draw(self, win):
+        pass # look for the draw function for an image projectile
+
 
 
 def main():
