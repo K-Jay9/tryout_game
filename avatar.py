@@ -1,6 +1,6 @@
 
 '''
-The sprites of the avatar
+The sprites of the avatar and also the enemy
 '''
 
 import pygame as pg
@@ -45,3 +45,34 @@ class Player(object):
         self.vel = 5
         
         # Initialise the booleans next
+    '''
+    Tinker with the following class methods
+    '''
+    def draw(self): # the equivalence of moving for the enemy
+        pass
+
+    def hit(self):
+        pass
+
+
+
+
+class Enemy(object):
+
+    def __init__(self, x,y, width, height, end):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.end = end
+
+    '''
+    Tinker with the following class methods
+    '''
+    def move(self):
+        pass
+
+    def hit(self):
+        pass
+
+    
