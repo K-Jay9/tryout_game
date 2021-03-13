@@ -10,8 +10,7 @@ from avatar import slide, throw, blade, run, jump, jump_attack, jump_throw, glid
 HEIGHT = 720
 WIDTH = 540
 NAME = "My awesome Game 2.0"
-x = 0
-y = 0
+
 
 
 # initialing avatar statistics
@@ -37,38 +36,32 @@ class Projectile(object):
 
 
 
-def main():
-    
-    # initialising pygame
-    pg.init()
 
-    # The set up of the window
-    pg.display.set_caption(NAME)
+# initialising pygame
+pg.init()
 
-    # load in the logo
-    logo = pg.image.load('mylogo.png')
+# The set up of the window
+pg.display.set_caption(NAME)
 
-    # Display the logo as the game's Icon
-    pg.display.set_icon(logo)
+# load in the logo
+logo = pg.image.load('mylogo.png')
 
-    # create a surface on screen
-    screen = pg.display.set_mode((HEIGHT, WIDTH))
+# Display the logo as the game's Icon
+pg.display.set_icon(logo)
 
-    # loop control variable
-    running = True 
+# create a surface on screen
+screen = pg.display.set_mode((HEIGHT, WIDTH))
 
-    while running:
-        # gets all the events from the eevnt queue
-        for event in pg.event.get():
+# loop control variable
+running = True 
 
-            if event.type == pg.QUIT:
-                # exit the while loop if quit is the event
-                running = False
+while running:
+    # gets all the events from the eevnt queue
+    for event in pg.event.get():
 
-    pg.quit()
+        if event.type == pg.QUIT:
+            # exit the while loop if quit is the event
+            running = False
 
-# run the main function only if this module is executed as the main script
-# (if you import this as a module then nothing is executed)
+pg.quit()
 
-if __name__ == '__main__':
-    main()
