@@ -32,6 +32,8 @@ throw = [pg.image.load('images/Throw__000.png'),pg.image.load('images/Throw__001
 # or dagger
 blade = pg.image.load('images/Kunai.png')
 
+# need to load in the sounds and music to the game
+
 
 # The class Player of the avatar
 
