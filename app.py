@@ -36,6 +36,9 @@ class Projectile(object):
 
 
 
+def redrawGameWindow():
+    pass # This function redraws the window for game statistics etc
+
 
 # initialising pygame
 pg.init()

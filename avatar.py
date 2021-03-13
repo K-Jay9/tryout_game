@@ -71,6 +71,9 @@ class Enemy(object):
     '''
     Tinker with the following class methods
     '''
+    def draw(self):
+        pass
+
     def move(self):
         pass
 
