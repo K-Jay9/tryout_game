@@ -3,6 +3,9 @@
 The sprites of the avatar and also the enemy
 '''
 
+# import the necessary libraries
+
+
 import pygame as pg
 
 # avatar images for activity
