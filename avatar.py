@@ -41,17 +41,22 @@ blade = pg.image.load('images/Kunai.png')
 
 # loading the sprites of the game
 all_sprite_list = pg.sprite.Group()
-n = 16
-while n != 0: 
+n = 1
+j = -10
+while n <= 16:
     image = pg.image.load(f"Theme/png/Tiles/Tile ({n}).png")
-    
+
     tile = pg.sprite.Sprite()
     tile.image = image
     tile.rect = image.get_rect()
-    tile.rect.x = 10
-    tile.rect.y = 10
+    tile.rect.x = j
+    tile.rect.y = 450
     all_sprite_list.add(tile)
-    n -= 1
+    n += 1
+    j += 50
+
+print(len(all_sprite_list))
+
 
 
 # The class Player of the avatar

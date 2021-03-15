@@ -7,7 +7,7 @@ import pygame as pg
 from utility import bloody, rock, whack, game_intro, evil_laugh
 
 # importing the avatars
-from avatar import Player, Enemy
+from avatar import Player, Enemy, all_sprite_list
 
 # All the Game constants
 HEIGHT = 720
@@ -63,6 +63,8 @@ def redrawGameWindow():
 
     text = font.render('Score: ' + str(score), 1, (0,0,0))
     screen.blit(text, (350, 10))
+
+    all_sprite_list.draw(screen)
 
     me.draw(screen)
     pg.display.update()
