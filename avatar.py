@@ -9,33 +9,49 @@ The sprites of the avatar and also the enemy
 import pygame as pg
 
 # avatar images for activity
-attack = [pg.image.load('images/Attack__000.png'),pg.image.load('images/Attack__001.png'),pg.image.load('images/Attack__002.png'),pg.image.load('images/Attack__003.png'),pg.image.load('images/Attack__004.png'),pg.image.load('images/Attack__005.png'),pg.image.load('images/Attack__006.png'),pg.image.load('images/Attack__007.png'),pg.image.load('images/Attack__008.png'),pg.image.load('images/Attack__009.png')]
+attack = [pg.image.load(f'images/Attack__00{i}.png') for i in range(10)]
 
-climb = [pg.image.load('images/Climb_000.png'),pg.image.load('images/Climb_001.png'),pg.image.load('images/Climb_002.png'),pg.image.load('images/Climb_003.png'),pg.image.load('images/Climb_004.png'),pg.image.load('images/Climb_005.png'),pg.image.load('images/Climb_006.png'),pg.image.load('images/Climb_007.png'),pg.image.load('images/Climb_008.png'),pg.image.load('images/Climb_009.png')]
 
-dead = [pg.image.load('images/Dead__000.png'),pg.image.load('images/Dead__001.png'),pg.image.load('images/Dead__002.png'),pg.image.load('images/Dead__003.png'),pg.image.load('images/Dead__004.png'),pg.image.load('images/Dead__005.png'),pg.image.load('images/Dead__006.png'),pg.image.load('images/Dead__007.png'),pg.image.load('images/Dead__008.png'),pg.image.load('images/Dead__009.png')]
+climb = [pg.image.load(f'images/Climb_00{i}.png') for i in range(10)]
 
-glide = [pg.image.load('images/Glide_000.png'),pg.image.load('images/Glide_001.png'),pg.image.load('images/Glide_002.png'),pg.image.load('images/Glide_003.png'),pg.image.load('images/Glide_004.png'),pg.image.load('images/Glide_005.png'),pg.image.load('images/Glide_006.png'),pg.image.load('images/Glide_007.png'),pg.image.load('images/Glide_008.png'),pg.image.load('images/Glide_009.png')]
+dead = [pg.image.load(f'images/Dead__00{i}.png') for i in range(10)]
 
-idle = [pg.image.load('images/Idle__000.png'),pg.image.load('images/Idle__001.png'),pg.image.load('images/Idle__002.png'),pg.image.load('images/Idle__003.png'),pg.image.load('images/Idle__004.png'),pg.image.load('images/Idle__005.png'),pg.image.load('images/Idle__006.png'),pg.image.load('images/Idle__007.png'),pg.image.load('images/Idle__008.png'),pg.image.load('images/Idle__009.png')]
+glide = [pg.image.load(f'images/Glide_00{i}.png') for i in range(10)]
 
-jump = [pg.image.load('images/Jump__000.png'),pg.image.load('images/Jump__001.png'),pg.image.load('images/Jump__002.png'),pg.image.load('images/Jump__003.png'),pg.image.load('images/Jump__004.png'),pg.image.load('images/Jump__005.png'),pg.image.load('images/Jump__006.png'),pg.image.load('images/Jump__007.png'),pg.image.load('images/Jump__008.png'),pg.image.load('images/Jump__009.png')]
+idle = [pg.image.load(f'images/Idle__00{i}.png') for i in range(10)]
 
-jump_attack = [pg.image.load('images/Jump_Attack__000.png'),pg.image.load('images/Jump_Attack__001.png'),pg.image.load('images/Jump_Attack__002.png'),pg.image.load('images/Jump_Attack__003.png'),pg.image.load('images/Jump_Attack__004.png'),pg.image.load('images/Jump_Attack__005.png'),pg.image.load('images/Jump_Attack__006.png'),pg.image.load('images/Jump_Attack__007.png'),pg.image.load('images/Jump_Attack__008.png'),pg.image.load('images/Jump_Attack__009.png')]
+jump = [pg.image.load(f'images/Jump__00{i}.png') for i in range(10)]
 
-jump_throw = [pg.image.load('images/Jump_Throw__000.png'),pg.image.load('images/Jump_Throw__001.png'),pg.image.load('images/Jump_Throw__002.png'),pg.image.load('images/Jump_Throw__003.png'),pg.image.load('images/Jump_Throw__004.png'),pg.image.load('images/Jump_Throw__005.png'),pg.image.load('images/Jump_Throw__006.png'),pg.image.load('images/Jump_Throw__007.png'),pg.image.load('images/Jump_Throw__008.png'),pg.image.load('images/Jump_Throw__009.png')]
+jump_attack = [pg.image.load(f'images/Jump_Attack__00{i}.png') for i in range(10)]
 
-run = [pg.image.load('images/Run__000.png'),pg.image.load('images/Run__001.png'),pg.image.load('images/Run__002.png'),pg.image.load('images/Run__003.png'),pg.image.load('images/Run__004.png'),pg.image.load('images/Run__005.png'),pg.image.load('images/Run__006.png'),pg.image.load('images/Run__007.png'),pg.image.load('images/Run__008.png'),pg.image.load('images/Run__009.png')]
+jump_throw = [pg.image.load(f'images/Jump_Throw__00{i}.png') for i in range(10)]
 
-slide = [pg.image.load('images/Slide__000.png'),pg.image.load('images/Slide__001.png'),pg.image.load('images/Slide__002.png'),pg.image.load('images/Slide__003.png'),pg.image.load('images/Slide__004.png'),pg.image.load('images/Slide__005.png'),pg.image.load('images/Slide__006.png'),pg.image.load('images/Slide__007.png'),pg.image.load('images/Slide__008.png'),pg.image.load('images/Slide__009.png')]
+run = [pg.image.load(f'images/Run__00{i}.png') for i in range(10)]
 
-throw = [pg.image.load('images/Throw__000.png'),pg.image.load('images/Throw__001.png'),pg.image.load('images/Throw__002.png'),pg.image.load('images/Throw__003.png'),pg.image.load('images/Throw__004.png'),pg.image.load('images/Throw__005.png'),pg.image.load('images/Throw__006.png'),pg.image.load('images/Throw__007.png'),pg.image.load('images/Throw__008.png'),pg.image.load('images/Throw__009.png')]
+slide = [pg.image.load(f'images/Slide__00{i}.png') for i in range(10)]
+
+throw = [pg.image.load(f'images/Throw__00{i}.png') for i in range(10)]
 
 
 # or dagger
 blade = pg.image.load('images/Kunai.png')
 
-# need to load in the sounds and music to the game
+
+
+
+# loading the sprites of the game
+all_sprite_list = pg.sprite.Group()
+n = 16
+while n != 0: 
+    image = pg.image.load(f"Theme/png/Tiles/Tile ({n}).png")
+    
+    tile = pg.sprite.Sprite()
+    tile.image = image
+    tile.rect = image.get_rect()
+    tile.rect.x = 10
+    tile.rect.y = 10
+    all_sprite_list.add(tile)
+    n -= 1
 
 
 # The class Player of the avatar
@@ -48,13 +64,21 @@ class Player(object):
         self.width = width
         self.height = height
         self.vel = 5
+        self.standing = True
+        self.right = False
+        self.left = False
+        self.walkCount = 0
+
         
         # Initialise the booleans next
     '''
     Tinker with the following class methods
     '''
-    def draw(self): # the equivalence of moving for the enemy
-        pass
+    def draw(self, win): # the equivalence of moving for the enemy
+        now = run[0]
+        now = pg.transform.scale(now, (50,50))
+        win.blit(now, (self.x, self.y))
+                
 
     def hit(self):
         pass
