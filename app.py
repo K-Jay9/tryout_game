@@ -5,6 +5,9 @@ import pygame as pg
 # import avatar movements
 from avatar import slide, throw, blade, run, jump, jump_attack, jump_throw, glide, idle, dead, climb, attack
 
+# Importing the sounds from utility 
+from utility import bloody, rock, whack, game_intro, evil_laugh
+
 
 # All the Game constants
 HEIGHT = 720
