@@ -2,12 +2,12 @@
 
 import pygame as pg
 
-# import avatar movements
-from avatar import slide, throw, blade, run, jump, jump_attack, jump_throw, glide, idle, dead, climb, attack
 
 # Importing the sounds from utility 
 from utility import bloody, rock, whack, game_intro, evil_laugh
 
+# importing the avatars
+from avatar import Player, Enemy
 
 # All the Game constants
 HEIGHT = 720
@@ -60,11 +60,23 @@ def redrawGameWindow():
     # This function redraws the window for game statistics etc
     screen.blit(bg, (0,0))
 
+
+    text = font.render('Score: ' + str(score), 1, (0,0,0))
+    screen.blit(text, (350, 10))
+
+    me.draw(screen)
     pg.display.update()
 
 
+#mainloop
+font = pg.font.SysFont('comicsans', 30, True)
 
-# loop control variable
+# Initialising the avatars
+me = Player(640, 480, 64,64)
+# goblin = enemy(100, 410, 64, 64, 450)
+
+score  = 0
+
 running = True 
 
 while running:
